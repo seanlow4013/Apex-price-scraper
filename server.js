@@ -5,8 +5,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const TCG_API_KEY = 'tcg_live_32528aa6b4f6dc65f81fe6584c9e46346cb76b9e';
-const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY || '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
-';
+const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY || '';
 
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
